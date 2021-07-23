@@ -30,7 +30,7 @@ const MyMapComponent = withScriptjs(
         zoom={props.crimes.length > 0 ? 14 : 8}
         defaultCenter={{ lat: 53.410268, lng: -1.514389 }}
         center={
-          props.crimes.length > 0
+          props.userLatitude && props.userLongitude
             ? { lat: props.userLatitude, lng: props.userLongitude }
             : { lat: 53.410268, lng: -1.514389 }
         }
