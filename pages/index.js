@@ -29,7 +29,14 @@ const CrimeApp = () => {
         )}`
       )
         .then((r) => r.json())
-        .then((crimes) => setCrimes(crimes));
+        .then((crimes) => {
+          if (crimes.length === 0) {
+            alert(
+              "There are no stop searches for specified area and date range. Please select a different location or date!"
+            );
+          }
+          setCrimes(crimes);
+        });
     }
   }, [userLatitude, userLongitude, startDate]);
   return (
