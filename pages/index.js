@@ -1,7 +1,7 @@
 import { Text } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import fetch from "unfetch";
-import MyMapComponent from "../components/GoogleMapComponent";
+import MyMapComponent from "../components/GoogleMap";
 import DatePicker from "react-datepicker";
 import { registerLocale } from "react-datepicker";
 import enGB from "date-fns/locale/en-GB";
