@@ -15,7 +15,7 @@ const convertDateToFetchFormat = (date) => {
     .padStart(2, "0")}`;
 };
 
-export default crimeApp = () => {
+export default CrimeApp = () => {
   const [userLatitude, setUserLatitude] = useState();
   const [userLongitude, setUserLongitude] = useState();
   const [crimes, setCrimes] = useState([]);
