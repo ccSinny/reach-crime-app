@@ -1,4 +1,3 @@
-// eslint-disable react/display-name
 import { Text } from "@chakra-ui/react";
 import React, { useState, useEffect } from "react";
 import fetch from "unfetch";
@@ -16,7 +15,7 @@ const convertDateToFetchFormat = (date) => {
     .padStart(2, "0")}`;
 };
 
-export default CrimeApp = () => {
+const CrimeApp = () => {
   const [userLatitude, setUserLatitude] = useState();
   const [userLongitude, setUserLongitude] = useState();
   const [crimes, setCrimes] = useState([]);
@@ -67,3 +66,5 @@ export default CrimeApp = () => {
     </div>
   );
 };
+
+export default CrimeApp;
